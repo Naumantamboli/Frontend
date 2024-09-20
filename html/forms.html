@@ -1,0 +1,87 @@
+
+<!--form is where u can connect your frontend to backend
+    form tag is used to collect info/input to the user
+    div tag defines the section or division in html
+     select tag se hum options mai se kuch bhi select kar sakte hai-->
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-widtkh, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>
+        This is form tutorial
+    </h2>
+    <form action="backend.php">
+        <label for="name">Name</label>   <!--agar hamne label par click kiya toh box click ho jayega--> 
+        <div>
+         <input type="text" name="name" id="name" placeholder="Enter your name">
+        </div>
+        <br>
+        <label for="role">Role:</label>
+        <div>
+         <input type="text" id="role" placeholder="enter your role">
+        </div>
+        <br>
+        <div>
+            <label for="myemail">Email:</label>
+           <input type="email" name="myemail" id="myemail" placeholder="enter your email">
+        </div>
+        <br>
+        <label for="mydate">Date:</label>
+        <div>
+            <input type="date" name="mydate"id="mydate" >
+        </div>
+        <br>
+        <label for="myBonus">Bonus:</label>
+        <div>
+        <input type="number" name="myBonus" id="myBonus">
+        </div>
+        <br>
+        <div>
+            <label for="myeligibility">are you elligible?: </label>
+            <input type="checkbox" name="myeligibility" >
+        </div>
+        <br>
+        <div>
+            Gender:Male <input type="radio" name="myGender" > female <input type="radio" name="myGender" >
+        </div>
+        
+        <br>
+        <div>
+          Write about yourself:<br><textarea name="" id="" cols="80" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="car">New car</label>
+            <select name="Mycar" id="car">
+            <option value="Creta">creta</option>
+            <option value="indica" selected >indica</option> <!--yaha selected likhne se ye option pahle hi selected milega-->
+            <option value="verna">verna</option>
+        </select>
+        </div>
+        <br>
+        <div>
+          <input type="submit" value="submit now">
+        </div>
+        <br>
+        <div>
+              <input type="image" value="image">
+        </div>
+        <br>
+        <div>
+             <input type="week" value="week">
+        </div>
+        <br>
+        <div>
+          <input type="reset" value="reset now">
+        </div>
+        
+        
+        
+    </form>
+</body>
+</html>

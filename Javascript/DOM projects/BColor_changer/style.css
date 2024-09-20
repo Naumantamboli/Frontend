@@ -1,0 +1,24 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+/* 
+#container{
+    height: 500px;
+    width: 600px;
+    /* background-color: blue; */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+} */ 
+
+body{
+    background-color: black;
+    color: white;
+}
+
+button:hover{
+    cursor: pointer;
+}

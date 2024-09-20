@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 100px;
+            width: 300px;
+            background-color: pink;
+
+            animation-name: widthanimate;
+            animation-duration: 2s;
+            animation-timing-function: ease-in;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+
+            /* animation shorthand*/
+            animation: widthanimate 2s linear 0.2s infinite alternate;
+        }
+
+        @keyframes animation {
+            from{
+                font-size: 20px;
+                
+            }
+            to{
+                font-size: 40px;
+            }
+        }
+
+        @keyframes coloranimation{
+            from{
+                background-color: green;
+            }
+            to{
+                background-color: rgb(54, 176, 238);
+            }
+        }
+
+        /* @keyframes widthanimate{
+            from{
+                width: 10px;
+                background-color: green;
+            }
+            to{
+                width: 400px;
+                background-color: rgb(10, 156, 228);
+                border-radius: 20px;
+            }
+        } */
+
+        @keyframes widthanimate{
+            0%{
+                background-color: green;
+            }
+            50%{
+                background-color: yellow;
+            }
+            80%{
+                background-color: red;
+            }
+            100%{
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Animations</h1>
+    <div class="box">This is a box</div>
+</body>
+</html>

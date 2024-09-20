@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    font-weight: 100vw;
+    background-color:bisque;
+}
+
+h1{
+    margin: auto;
+    display: inline-block;
+    text-align: center;
+    color: white;
+}
+
+#container{
+    margin: auto;
+    min-height: 380px;
+    height: auto;
+    width: 480px;
+    border-radius: 20px;
+    background-color: white;
+    padding: 10px;
+}
+
+#searchbar{
+    height: 100px;
+    width: 100%;
+    /* background-color: black; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#searchbar input{
+    height: 30px;
+    width: 290px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid bisque;
+    /* border: 5px solid aqua; */
+    /* border-bottom: aqua; */
+}
+
+#searchbar button{
+    height: 35px;
+    width: 90px;
+    margin-left: 20px;
+    border-radius: 5px;
+    background-color:rgb(231, 188, 140);
+    border: none;
+    color: white;
+    font-size: small;
+}
+
+#searchbar button a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+#result{
+    position: relative;
+    width: 457px;
+}
+
+#word{
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+    margin: 30px 5px 0px 20px;
+    padding: 3px 8px;
+}
+
+.error{
+    margin-top: 60px;
+    margin: 30px 5px 0px 20px;
+    padding: 3px 8px;
+}
+
+#word button{
+    height: 30px;
+    width: 30px;
+    background: transparent;
+}
+
+#details{
+    display: flex;
+    font-size: 16px;
+    gap: 7px;
+    color: #b3b6b4;
+    padding: 0px 30px;
+}
+
+#info{
+    padding: 20px 30px;
+}
+
+#example{
+    /* margin-top: 10px; */
+    padding: 4px 16px;
+    position: absolute;
+    left: 30px;
+    border: none;
+    border-left: 3px solid bisque;
+    
+}

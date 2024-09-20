@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: beige;
+            border: 5px solid black;
+        }
+        .box{
+            width: 350px;
+            height: 80px;
+            background-color: blue;
+            position: absolute;
+            border-radius: 10px;
+            margin: 10px;
+            border: 3px solid green;
+            /* animation: 5s ease-in 1s infinite alternate none running rightMovement; */
+            animation-name: rightMovement;
+            animation-duration: 3s;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+            animation-fill-mode: none;
+            animation-play-state: running;
+        }
+
+        @keyframes rightMovement{
+            from {
+                top: 0;
+                left: 0;
+            }
+
+            to {
+                top: 0;
+                left: 1160px;
+            }
+        }
+
+        #box2{
+            width: 350px;
+            height: 80px;
+            background-color: blue;
+            border: 3px solid yellow;
+            position: absolute;
+            border-radius: 10px;
+            margin: 10px;
+            position: absolute;
+            animation: 3s ease-in 1s infinite alternate none running leftMovement;
+        }
+
+        @keyframes leftMovement{
+            from{
+                top: 600px;
+                left: 1160px;
+            }
+            to{
+                top: 600px;
+                left: 0;
+            }
+        }
+         /*@keywords  name | duration| timing-function| delay| iteration-count | direction | fill-mode | play-state |*/
+
+         #circle{
+            width: 70px;
+            height: 70px;
+            background-color: blue;
+            border: 3px solid yellow;
+            position: relative;
+            border-radius: 1000px;
+            margin: 10px;
+            position: relative;
+            top: 290px;
+            left: 696px;
+            animation: 10s ease-in-out 0s infinite alternate-reverse none running circleMovement;
+         }
+         @keyframes circleMovement{
+            0%{          
+                 /* (here % represents the time of total time), 0% animation matlab us time par kaha hona chahiye*/
+                top: 1%;
+                left: 5%;
+            }
+            30%{        
+                /*30% time ho gaya toh us time par kaha hoga woh dikhayega*/
+                top: 5%;
+                left: 80%;
+            }
+            60%{
+                top: 70%;
+                left: 10%;
+            }
+            100%{
+                top: 75%;
+                left: 80%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+        <div id="box2">
+
+        </div>
+        <div id="circle">
+
+        </div>
+    </div>
+</body>
+</html>

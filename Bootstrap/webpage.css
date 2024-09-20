@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navul a:hover{
+    color: yellow;
+}
+
+#navimg{
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+
+.navbtns{
+    margin-right: 10px;
+}
+
+.carousalcontainer{
+    height: 200px;
+    width: 70vw;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.carousel-item img{
+    height: 300px;
+    width: 50vw;
+}
+
+.cardscontainer{
+    box-sizing: border-box;
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    margin: 0px 20px ;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <style>
+
+        #combine{
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+
+        .card{
+            height: 500px;
+            width: 400px;
+            border: 2px solid black;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: antiquewhite;
+            border-radius: 8px;
+            margin: 5px;
+        }
+
+        img{
+            height: 180px;
+            width: 100%;
+            border-radius: 25px;
+        }
+
+        span{
+            color: brown;
+        }
+        h3{
+            text-align: center;
+        }
+
+        @media (max-width: 450px){
+            #combine{
+                flex-wrap: wrap;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h2><i>adoptme.com</i></h2>
+    <h1 style="text-decoration: underline;">Adopt a <span>Pet</span> today</h1>
+    <section id="combine">
+    <div class="card">
+        <img src="img1.jpg" alt="">
+        <h3>Meet Jerry </h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, libero est, laudantium laborum dolores aspernatur, doloremque maiores eaque ratione quam et ad? Nesciunt eligendi veritatis tempore quisquam, nobis fugiat corrupti! Temporibus animi voluptas maiores doloribus esse quas delectus quis numquam! Eum recusandae velit reiciendis aliquid sunt ipsa. Reiciendis, ratione obcaecati.</p>
+    </div>
+    <div class="card">
+        <img src="img2.avif" alt="">
+        <h3>Meet Tom</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis exercitationem tempore itaque. Vitae, tenetur, dicta assumenda sit animi ipsam perspiciatis, odio rerum dolorem error corrupti quod debitis? Officiis cum ea mollitia corporis itaque provident aliquid beatae, eum quos dolor, doloribus maxime! Quibusdam in quisquam numquam alias eaque harum exercitationem neque!</p>
+    </div>
+</section>
+</body>
+</html>

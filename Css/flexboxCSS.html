@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container{
+            background-color: beige;
+            border: 5px solid black;
+            display: flex;
+            margin: 2px;
+            padding: 2px;
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+            /* flex-wrap: wrap; */
+            height: 650px;
+            /* justify-content: end; */
+            /* align-items: center; */
+            justify-content: flex-start;
+            align-items: flex-start;
+            align-content: start;
+        
+        }
+        .box{
+            /* height: 100px;
+            width: 100px; */
+            border: 1px solid green;
+            margin: 2px;
+            padding: 2px;
+            color: white;
+        }
+        #box1{
+            background-color: aqua;
+            /* order: 500;  (jyada order matlab baadme ayega woh) */
+            align-self: flex-end;
+            
+        }
+        #box2{
+            background-color: blue;
+            /* order: -1; (kam order matlab pahela ayega woh) */
+        }
+        #box3{
+            background-color: orange;
+        }
+        #box4{
+            
+            background-color: brown;
+            /* flex-shrink: 4; */
+            /* width: 400px; */
+            /* flex-basis: 500px; */
+            /* flex-grow: 4; */
+            /* flex-basis: 400px;  (agar flex-direction:row toh flex-basis controls width if it is column flex-basis controls height) */
+            
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">Box 1</div>
+        <div class="box" id="box2">Box 2</div>
+        <div class="box" id="box3">Box 3 </div>
+        <div class="box" id="box4">Box 4</div>
+    </div>
+</body>
+</html>
+<!-- 1)display agar flex kiya toh uska by default  direction horizontal hota hai
+     2)column reverse and row reverse karne se woh reverse ho jayenge 
+     * main-axis by default horizontal hoti hai
+     3)flex-wrap = use kiya toh content directly squeeze nahi hoga pahale woh next line mai ayega agar space nahi hogi toh woh squeeze karega
+    4)flex-flow kaise use hota hai HW
+     5)justify-content = (acts on main axis) content ki position and  spacing change karne kai liye hota hai
+     start,center,end,
+     space-around =har dabbe kai around equal space
+     space-between =end kai 2 dabbe border se chitke huye and baki dabbo mai equal space
+     space-evenly= har dabbe kai left aur right mai equal space hota hai
+    6)align-item =by default cross axis par kaam karta hai joh vertical hoti hai
+    7)align-content =flex-wrap liya toh content kai bich mai space hoti hai usko control karne use hota hai
+
+    PROPERTIES OF FLEX ITEMS
+    1) order:
+    2) flex-shrink: flex items shrink karne ko control karta hia
+    3) flex-grow: flex items grow karne ko control karta hai (pahale hi puri space ko occupy karega)
+    4) flex-basis: used to set the dimensions to flex-items
+    5) align-self: cross axis default hoti hai uske andar hum changes kar sakte hai
+ 
+-->

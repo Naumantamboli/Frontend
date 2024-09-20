@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform property</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            background-color: burlywood;
+        }
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: brown;
+            border: 2px solid black;
+            height: 400px;
+            width: 400px;
+            border-radius: 8px;
+            transition: all 0.5s ease-in-out ;
+            /* transform: rotate(45deg); */
+        }
+
+        .box:hover{
+            /* transform: rotate(360deg); */
+            /* transform: skew(40deg);    tedha ho jayega */ 
+            /* transform: scale(2);   bada ho jayega */
+            /* transform: translateX(120px); X-direction mai age ayega */
+            transform: translate(120px,120px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"><em>This is a box</em></div>
+    </div>
+</body>
+</html>

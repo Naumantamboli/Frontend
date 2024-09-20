@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 50px;
+            text-align: center;
+            background-color: #7aa874;
+            border: 2px solid black;
+            margin: 20px auto;
+        }
+
+        div:nth-child(2n){
+            background-color: rgb(126, 126, 202);
+        }
+        div:nth-child(3n){
+            background-color: rgb(146, 92, 197);
+        }
+
+        #one{
+            transform: rotate(180deg);
+        }
+
+        #two{
+            transform: scale(0.5);
+        }
+
+        #three{
+            transform: translateX(-100px);
+        }
+
+        #four{
+            transform: skew(36deg);
+        }
+
+        #five{
+            transform: rotate(30deg) translateX(100px);
+        }
+    </style>
+</head>
+<body>
+    <div id="one">1</div>
+    <div id="two">2</div>
+    <div id="three">3</div>
+    <div id="four">4</div>
+    <div id="five">5</div>
+</body>
+</html>

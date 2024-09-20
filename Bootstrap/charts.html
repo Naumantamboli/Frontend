@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real-Time Random Graph</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js" integrity="sha512-L0Shl7nXXzIlBSUUPpxrokqq4ojqgZFQczTYlGjzONGTDAcLremjwaWv5A+EDLnxhQzY5xUZPWLOLqYRkY0Cbw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+    .chart-container {
+      width: 400px; /* Adjust width as needed */
+      height: 300px; /* Adjust height as needed */
+      background-color: #fff; /* Optional: Add a background color */
+      padding: 20px; /* Optional: Add padding */
+      border-radius: 10px; /* Optional: Add border radius */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+    }
+    canvas {
+      width: 100% !important; /* Make the canvas take up full width of the container */
+      height: 100% !important; /* Make the canvas take up full height of the container */
+    }
+  </style>
+</head>
+<body>
+  <div class="chart-container">
+    <canvas id="myChart"></canvas>
+  </div>
+  <div class="chart-container">
+    <canvas id="myChart2"></canvas>
+  </div>
+  <script>
+    const ctx = document.getElementById('myChart').getContext('2d');
+    const labels = Array.from({ length: 10 }, (_, i) => i + 1);
+    const data = {
+      labels: labels,
+      datasets: [{
+        label: 'Random Data',
+        data: labels.map(() => Math.floor(Math.random() * 100)),
+        borderColor: 'rgba(75, 192, 192, 1)',
+        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+        fill: true,
+      }]
+    };
+
+    const config = {
+      type: 'line',
+      data: data,
+      options: {
+        scales: {
+          x: {
+            beginAtZero: true
+          },
+          y: {
+            beginAtZero: true
+          }
+        },
+        animation: {
+          duration: 0 // Disable animation for real-time updates
+        }
+      }
+    };
+
+    const myChart = new Chart(ctx, config);
+
+    // Update chart with random data every second
+    setInterval(() => {
+      const newValue = Math.floor(Math.random() * 100); 
+      data.datasets[0].data.shift(); // Remove the first value
+      data.datasets[0].data.push(newValue); // Add the new value
+      myChart.update(); // Update the chart
+    }, 1000); // Update every second
+  </script>
+</body>
+</html>

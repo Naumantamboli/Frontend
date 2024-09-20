@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String functions</title>
+    <script>
+        var str = "this is a string";
+        console.log(str);
+
+        //First occurence of substring
+        var position = str.indexOf('is');
+        console.log(position);
+
+        //last occurence of substring
+        position= str.lastIndexOf('is');
+        console.log(position);
+
+        //length of string
+        console.log(str.length);
+
+        //substring from a string
+        var substr1 = str.slice(1,6);
+        console.log(substr1);
+
+        var substr2 = str.substring(1,6);  //substring mai negative value nahi le sakte
+        console.log(substr2);
+
+        var substr3 = str.substr(1,6);  //index 1 se chalu karo and 6 lengths extract karlo
+        console.log(substr3);
+
+        //replace a substring
+        var replace = str.replace('string','nauman');
+        console.log(str);
+        console.log(replace);
+
+        //uppercase and lowercase
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+
+        //string concatenation
+        // var newstring = str.concat(' new string');
+        // console.log(newstring);
+        console.log(str.concat(' newstring'));
+
+        //trim function
+        var strwithWhitespaces = "  this contains    Whitespaces  "
+        console.log(strwithWhitespaces);
+        console.log(strwithWhitespaces.trim()); //start and end se white spaces ko trim kar deta hai
+
+        //
+
+        var char = str.charAt(3);  //3 is the index here
+        var char1 = str.charCodeAt(3); //woh character ka code deta hai
+        console.log(char);
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

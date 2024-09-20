@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: #ead7ec;
+        }
+        .container{
+           
+            /* we can set padding/margin top bottom left and right */
+            /* padding-top: 50px;
+            padding-bottom:30px
+            padding right: 43px;
+            padding-left: 66px;
+            */
+            background-color: rgb(231, 238, 248);
+            border: 3px solid rgb(159, 151, 219);
+             padding: 60px 50px; /* padding/margin = top right bottom left; */
+                                 /* padding: 34px 19px padding: y(top/bottom) x(left/right) */
+
+            margin: 30px;
+           border-radius: 23px;
+           width: 1000px;
+           box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="first">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio obcaecati excepturi optio odit porro nam perspiciatis laboriosam asperiores! Repellat maiores repudiandae labore nulla.</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="second">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio obcaecati excepturi optio odit porro nam perspiciatis laboriosam asperiores! Repellat maiores repudiandae labore nulla.</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="third">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio obcaecati excepturi optio odit porro nam perspiciatis laboriosam asperiores! Repellat maiores repudiandae labore nulla.</p>
+    </div>
+    
+</body>
+</html>
