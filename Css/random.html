@@ -1,47 +1,294 @@
 <!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Responsive Timeline Design | CodingNepal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>question</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        #traffic{
-            height: 200px;
-            width: 70px;
-            border: 2px solid black;
-            /* background-color: yellow; */
-        }
-        .color{
-            height: 50px;
-            width: 50px;
-            border: 2px solid black;
-            margin: 10px;
-            border-radius: 25px;
-        }
-        #red{
-            background-color: red;
-        }
-        #yellow{
-            background-color: yellow;
-        }
-        #green{
-            background-color: rgb(112, 228, 112);
-        }
-
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background: #ff7979;
+}
+::selection{
+  color: #fff;
+  background: #ff7979;
+}
+.wrapper{
+  max-width: 1080px;
+  margin: 50px auto;
+  padding: 0 20px;
+  position: relative;
+}
+.wrapper .center-line{
+  position: absolute;
+  height: 100%;
+  width: 4px;
+  background: #fff;
+  left: 50%;
+  top: 20px;
+  transform: translateX(-50%);
+}
+.wrapper .row{
+  display: flex;
+}
+.wrapper .row-1{
+  justify-content: flex-start;
+}
+.wrapper .row-2{
+  justify-content: flex-end;
+}
+.wrapper .row section{
+  background: #fff;
+  border-radius: 5px;
+  width: calc(50% - 40px);
+  padding: 20px;
+  position: relative;
+}
+.wrapper .row section::before{
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background: #fff;
+  top: 28px;
+  z-index: -1;
+  transform: rotate(45deg);
+}
+.row-1 section::before{
+  right: -7px;
+}
+.row-2 section::before{
+  left: -7px;
+}
+.row section .icon,
+.center-line .scroll-icon{
+  position: absolute;
+  background: #f2f2f2;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ff7979;
+  font-size: 17px;
+  box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0,0,0,0.08), 0 3px 0 4px rgba(0,0,0,0.05);
+}
+.center-line .scroll-icon{
+  bottom: 0px;
+  left: 50%;
+  font-size: 25px;
+  transform: translateX(-50%);
+}
+.row-1 section .icon{
+  top: 15px;
+  right: -60px;
+}
+.row-2 section .icon{
+  top: 15px;
+  left: -60px;
+}
+.row section .details,
+.row section .bottom{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.row section .details .title{
+  font-size: 22px;
+  font-weight: 600;
+}
+.row section p{
+  margin: 10px 0 17px 0;
+}
+.row section .bottom a{
+  text-decoration: none;
+  background: #ff7979;
+  color: #fff;
+  padding: 7px 15px;
+  border-radius: 5px;
+  /* font-size: 17px; */
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+.row section .bottom a:hover{
+  transform: scale(0.97);
+}
+@media(max-width: 790px){
+  .wrapper .center-line{
+    left: 40px;
+  }
+  .wrapper .row{
+    margin: 30px 0 3px 60px;
+  }
+  .wrapper .row section{
+    width: 100%;
+  }
+  .row-1 section::before{
+    left: -7px;
+  }
+  .row-1 section .icon{
+    left: -60px;
+  }
+}
+@media(max-width: 440px){
+  .wrapper .center-line,
+  .row section::before,
+  .row section .icon{
+    display: none;
+  }
+  .wrapper .row{
+    margin: 10px 0;
+  }
+}
+</style>
 <body>
-    <div id="traffic">
-        <div class="color" id="red">
-
-        </div>
-        <div class="color" id="yellow">
-
-        </div>
-        <div class="color" id="green">
-
-        </div>
+  <div class="wrapper">
+    <div class="center-line">
+      <a href="#" class="scroll-icon"><i class="fas fa-caret-up"></i></a>
     </div>
+    <div class="row row-1">
+      <section>
+        <i class="icon fas fa-home"></i>
+        <div class="details">
+          <span class="title">Recruitment</span>
+          <span>1st Jan 2021</span>
+        </div>
+        <p>We cater our clients and candidates with excellent recruitment services. Our approach
+            focuses on flexibility and customized solutions, ensuring the
+            perfect fit for your organization’s challenges and opportunities.
+            We are liable to develop partnerships with our clients in order to understand their business goals.
+            We help clients in sourcing suitable candidates for specific roles. We begin recruitment from assessing
+            job
+            requirements, sourcing candidates, conducting client interviews and then closing the job requirement. We
+            make sure candidates have positive experience throughout the
+            recruitment process</p>
+        <div class="bottom">
+          <a href="#">Read more</a>
+          <i>- Someone famous</i>
+        </div>
+      </section>
+    </div>
+    <div class="row row-2">
+      <section>
+        <i class="icon fas fa-star"></i>
+        <div class="details">
+          <span class="title">Campus Recruitment</span>
+          <span>2nd Jan 2021</span>
+        </div>
+        <p>Campus recruitment allows industries to focus on fresh graduates who possess the latest
+            knowledge, skills, and innovative thinking in their respective fields.
+            By engaging with universities and building a presence on campuses, industries can promote their brand,
+            culture, and values, making them attractive employers for students.
+            Our campus recruitment services connect companies with top talent by facilitating the hiring of students
+            and recent graduates directly from colleges and universities.
+            These services help companies identify, engage, and recruit skilled talent through on-campus events, job
+            fairs, interviews, and internships. With access to a diverse pool of young professionals, companies can
+            build their future workforce while students gain valuable career opportunities, making campus recruitment
+            a win-win for both employers and candidates.</p>
+        <div class="bottom">
+          <a href="#">Read more</a>
+          <i>- Someone famous</i>
+        </div>
+      </section>
+    </div>
+    <div class="row row-1">
+      <section>
+        <i class="icon fas fa-rocket"></i>
+        <div class="details">
+          <span class="title">Temporary Staffing</span>
+          <span>3rd Jan 2021</span>
+        </div>
+        <p>Our temporary staffing services provide businesses with flexible workforce solutions by
+            offering qualified employees on a short-term basis.
+            Whether it is to manage seasonal demand, fill gaps due to employee absences, or support special projects,
+            temporary staffing ensures companies meet productivity commitments. These services allow businesses to
+            quickly adapt to changing workforce needs while accessing skilled talent efficiently and cost-effectively.
+            Temporary staffing reduces long-term employment costs including benefits, insurance, and retirement plans.
+            It also lowers the overhead of recruiting, hiring, and training full-time employees.</p>
+        <div class="bottom">
+          <a href="#">Read more</a>
+          <i>- Someone famous</i>
+        </div>
+      </section>
+    </div>
+    <div class="row row-2">
+      <section>
+        <i class="icon fas fa-globe"></i>
+        <div class="details">
+          <span class="title">Counselling</span>
+          <span>4th Jan 2021</span>
+        </div>
+        <p>Counselling services provide individuals with professional support and guidance to help
+            manage and overcome career challenges. Counselling services aim to foster resilience and positive change
+            in a supportive environment.
+            Candidate career and job counselling services offer guidance to help candidate navigate their career paths
+            and achieve professional success. These services provide support in identifying career interests,
+            developing skills, exploring job opportunities, and creating effective resumes and interview strategies.
+            Candidates can make informed decisions about their future careers, internships, and job placements,
+            ensuring they are prepared to enter the workforce with confidence.</p>
+        <div class="bottom">
+          <a href="#">Read more</a>
+          <i>- Someone famous</i>
+        </div>
+      </section>
+    </div>
+    <div class="row row-1">
+      <section>
+        <i class="icon fas fa-paper-plane"></i>
+        <div class="details">
+          <span class="title">RPO</span>
+          <span>5th Jan 2021</span>
+        </div>
+        <p>We handle everything from sourcing, screening, and interviewing candidates to managing
+            offers and onboarding, tailored to meet specific company needs. This results in improved hiring
+            efficiency, access to a larger talent pool, reduced costs, and scalable recruitment processes aligned with
+            the company's growth objectives.
+            We deliver custom recruitment strategies based on the company’s goals, industry trends, and talent needs.
+            We have various sourcing channels (job boards, social media, industry networks, campus placements) to
+            identify high-quality candidates. Screening includes evaluating resumes, conducting interviews, and
+            assessing skills.
+            We help enhance the company’s brand to attract top talent by promoting the company culture, values, and
+            opportunities.
+            We track hiring metrics, such as time-to-hire, cost-per-hire, and quality of hire, ensuring continuous
+            optimization.</p>
+        <div class="bottom">
+          <a href="#">Read more</a>
+          <i>- Someone famous</i>
+        </div>
+      </section>
+    </div>
+    <div class="row row-2">
+      <section>
+        <i class="icon fas fa-map-marker-alt"></i>
+        <div class="details">
+          <span class="title">Training</span>
+          <span>6th Jan 2021</span>
+        </div>
+        <p>Our candidate training services provide candidates and job seekers with the skills and
+            knowledge needed to succeed in their careers in today’s job market. These services offer customised
+            training programs in areas such as resume writing, interview preparation, technical competencies,
+            professional communication, and industry specific skills development.
+            By enhancing candidates' employability and confidence, the training ensures they are well-prepared for job opportunities and career advancement.</p>
+        <div class="bottom">
+          <a href="#">Read more</a>
+          <i>- Someone famous</i>
+        </div>
+      </section>
+    </div>
+  </div>
+
 </body>
 </html>
