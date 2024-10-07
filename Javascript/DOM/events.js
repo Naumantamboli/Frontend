@@ -6,7 +6,7 @@ console.dir(btn);
 //     console.log("button was clicked")
 // }
 
-// for(btn of btns){
+// for(btn of btns){k
 //     btn.onclick = abc;
 // }
 
