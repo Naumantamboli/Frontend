@@ -1,9 +1,11 @@
 import Nauman from "./nauman"
 
 function App() {
+  const user = "nauman"
+
   return (
     <>
-    <h1>Nauman Tamboli with vite</h1>   
+    <h1>Nauman Tamboli with vite {user}</h1>   
     <Nauman /> 
     </>
   )
