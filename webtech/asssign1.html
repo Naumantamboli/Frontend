@@ -7,10 +7,101 @@
     <title>Document</title>
     <link rel="stylesheet" href="assign1.css">
 </head>
+<style>
+    body{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 20px;
+    }
+    /* .container{
+        background-color: beige;
+    } */
+    iframe{
+        position: relative;
+        top: 30px;
+        left: 30px;
+        border-radius: 20px;
+    }
 
+    .comb{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 400px;
+    }
+
+    *{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.container{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    width: 65%;
+    margin-left: 20px;
+    padding: 15px;
+}
+
+#heading{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+#profimg{
+    height: 130px;
+    width: 100px;
+    /* position: absolute; */
+    /* right: 570px; */
+    /* top: 8px; */
+}
+
+.combine{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.mainbody{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+ul{
+    list-style-type: square;
+}
+
+.framecont{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+</style>
 <body>
     <div class="container">
-        <h1 id="heading">Nauman Tamboli</h1>
+        <div class="comb">
+            <h1 id="heading">Nauman Tamboli</h1>
+            <img src="./Profilepic.jpg" alt="" id="profimg">
+        </div>
 
         <div class="box">
             <a href="">+91-7028667318</a>
@@ -19,9 +110,8 @@
             <a href="">linkedin</a>
             <a href="">Github</a>
         </div>
-        <img src="./Profilepic.jpg" alt="" id="profimg">
 
-        <div class="body">
+        <div class="mainbody">
             <div class="cont1">
                 <h2>Education</h2>
                 <hr>
@@ -53,6 +143,7 @@
                     <span><i>Percentage: 95.80%</i></span>
                 </div>
             </div>
+            
             <div class="cont2">
                 <h2>Projects</h2>
                 <hr>
@@ -127,6 +218,11 @@
                 </ul>
             </div>
         </div>
+    </div>
+    <div class="framecont">
+        <iframe width="340" height="185" src="https://www.youtube.com/embed/XJ7bYdjKDcA?si=9em6dLnH-tqzKSus" title="YouTube video player" frameborder="10" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <iframe width="340" height="185" src="https://www.youtube.com/embed/y3R9e2L8I9E?si=WA89aT3BQGANXDEg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
 </body>
 
