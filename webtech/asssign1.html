@@ -1,139 +1,146 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="assign1.css">
 </head>
 <body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <h1>Nauman Tamboli</h1>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#education">Education</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+            </div>
+        </div>
+    </nav>
+
     <div class="container">
-        <div class="comb">
-            <h1 id="heading">Nauman Tamboli</h1>
-            <img src="./photos/Profilepic.jpg" alt="" id="profimg">
-        </div>
+        <!-- Header Section -->
+        <section id="home" class="header-section">
+            <div class="profile-container">
+                <img src="./photos/image.jpg" alt="Profile Picture" class="profile-img">
+                <div class="contact-info">
+                    <div class="contact-links">
+                        <a href="tel:+917028667318" class="contact-btn">📞 +91-7028667318</a>
+                        <a href="mailto:naumantamboli221@vit.edu" class="contact-btn">✉️ naumantamboli221@vit.edu</a>
+                        <a href="https://www.linkedin.com/in/naumantamboli786786/" class="contact-btn">LinkedIn</a>
+                        <a href="https://github.com/Naumantamboli" class="contact-btn">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <div class="box">
-            <a href="">+91-7028667318</a>   
-            <a href="">naumantamboli221@vit.edu</a>
-            <a href="mailto:tambolinauman7@gmail.com">tambolinauman7@gmail.com</a>
-            <a href="https://www.linkedin.com/in/naumantamboli786786/">linkedin</a>
-            <a href="https://github.com/Naumantamboli">Github</a>
-        </div> 
-
-        <div class="mainbody">
-            <div class="cont1">
-                <h2>Education</h2>
-                <hr>
-                <br>
-                <div class="combine">
+        <!-- Education Section -->
+        <section id="education" class="section">
+            <h2 class="section-title">Education</h2>
+            <div class="education-grid">
+                <div class="education-card">
                     <h3>Vishwakarma Institute Of Technology, Pune</h3>
-                    <span> 2026</span>
+                    <p class="year">2026</p>
+                    <p class="degree">Bachelor of Technology in Computer Engineering</p>
+                    <p class="grade">CGPA: 8.34</p>
                 </div>
-                <div class="combine">
-                    <i>Bachelor of Technology in Computer Engineering</i>
-                    <span><i>CGPA-8.34</i></span>
+                <div class="education-card">
+                    <h3>Chaitanya's Academy, Baramati</h3>
+                    <p class="year">2022</p>
+                    <p class="degree">Higher and Secondary Education in Science</p>
+                    <p class="grade">Percentage: 81.83%</p>
                 </div>
-                <br>
-                <div class="combine">
-                    <h3> Chaitanya’s Academy , Baramati</h3>
-                    <span>2022</span>
-                </div>
-                <div class="combine">
-                    <i>Higher and Secondary Education in Science</i>
-                    <span><i>Percentage: 81.83%</i></span>
-                </div>
-                <br>
-                <div class="combine">
-                    <h3> Shreemant Shivajiraje English Medium School</h3>
-                    <span>2020</span>
-                </div>
-                <div class="combine">
-                    <i>Secondary and Higher Secondary Education</i>
-                    <span><i>Percentage: 95.80%</i></span>
+                <div class="education-card">
+                    <h3>Shreemant Shivajiraje English Medium School</h3>
+                    <p class="year">2020</p>
+                    <p class="degree">Secondary and Higher Secondary Education</p>
+                    <p class="grade">Percentage: 95.80%</p>
                 </div>
             </div>
-            
-            <div class="cont2">
-                <h2>Projects</h2>
-                <hr>
-                <br>
-                <b>Tripwise | </b>
-                <span>TailwindCSS, ReactJS, NodeJS, MongoDB, MySQL</span>
-                <ul>
-                    <li> Developed a responsive travel booking platform using TailwindCSS for a seamless user experience
-                        across devices</li>
-                    <li> Created RESTful APIs with NodeJS for efficient data handling and integrated MongoDB for
-                        managing user data</li>
-                    <li> Built dynamic frontend features with JavaScript to enhance user interaction and simplify the
-                        booking process</li>
-                    <li> Utilized MySQL for relational data storage, ensuring reliable and scalable backend operations.
-                    </li>
-                </ul>
+        </section>
 
-                <br>
-                <b> Smart Agriculture System | </b>
-                <span>Arduino IDE, IoT sensors, C/C++</span>
-                <ul>
-                    <li> Developed a responsive travel booking platform using TailwindCSS for a seamless user experience
-                        across devices</li>
-                    <li> Created RESTful APIs with NodeJS for efficient data handling and integrated MongoDB for
-                        managing user data</li>
-                    <li> Built dynamic frontend features with JavaScript to enhance user interaction and simplify the
-                        booking process</li>
-                    <li> Utilized MySQL for relational data storage, ensuring reliable and scalable backend operations.
-                    </li>
-                </ul>
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <h2 class="section-title">Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>1.Tripwise</h3>
+                    <p class="tech-stack">TailwindCSS, ReactJS, NodeJS, MongoDB, MySQL</p>
+                    <ul>
+                        <li>Developed a responsive travel booking platform</li>
+                        <li>Created RESTful APIs with NodeJS</li>
+                        <li>Built dynamic frontend features</li>
+                        <li>Implemented MySQL database integration</li>
+                    </ul>
+                </div>
+                <div class="project-card">
+                    <h3>2.Smart Agriculture System</h3>
+                    <p class="tech-stack">Arduino IDE, IoT sensors, C/C++</p>
+                    <ul>
+                        <li>Developed IoT-based monitoring system</li>
+                        <li>Implemented sensor integration</li>
+                        <li>Created automated irrigation system</li>
+                        <li>Built user-friendly interface</li>
+                    </ul>
+                </div>
+                <div class="project-card">
+                    <h3>3.CompareIt</h3>
+                    <p class="tech-stack">HTML, CSS, Javascript, Web Scraping, MySQL</p>
+                    <ul>
+                        <li>Built price comparison platform</li>
+                        <li>Implemented web scraping</li>
+                        <li>Created dynamic price tracking</li>
+                        <li>Developed database system</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-                <br>
-                <b> CompareIt | </b>
-                <span>HTML, CSS, Javascript, Web Scraping, MySQL</span>
-                <ul>
-                    <li> Developed a responsive travel booking platform using TailwindCSS for a seamless user experience
-                        across devices</li>
-                    <li> Created RESTful APIs with NodeJS for efficient data handling and integrated MongoDB for
-                        managing user data</li>
-                    <li> Built dynamic frontend features with JavaScript to enhance user interaction and simplify the
-                        booking process</li>
-                    <li> Utilized MySQL for relational data storage, ensuring reliable and scalable backend operations.
-                    </li>
-                </ul>
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <p>Java, C++, Python (Basic), C, SQL, Javascript</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Databases & Tools</h3>
+                    <p>MongoDB, MySQL, Git, VS Code, Eclipse</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Frameworks</h3>
+                    <p>React.js, Node.js, Express.js, TailwindCSS</p>
+                </div>
             </div>
-            <div class="cont3">
-                <h2>Technical Skills</h2>
-                <hr>
-                <br>
-                <b>Languages: </b> <span>Java, C++, Python (Basic), C, SQL, Javascript</span><br>
-                <b>Databases and Developer Tools: </b> <span>Java, C++, Python (Basic), C, SQL, Javascript</span><br>
-                <b>Frameworks and Libraries: </b> <span>Java, C++, Python (Basic), C, SQL, Javascript</span><br>
-                <b>Relevent Courseworks: </b> <span>Data Structures, OOP, Database Management System, Operating
-                    System</span>
-            </div>
-            <div class="cont4">
-                <h2>Acheivements</h2>
-                <hr>
-                <br>
-                <ul>
-                    <li> Won bronze medals in IMO(International Maths Olympiad) and in NSO(National Science Olympiad)</li>
-                    <li>State Level Hockey player and best player award in district level.</li>
-                </ul>
-            </div>
-            <div class="cont4">
-                <h2>Volunteering experiance</h2>
-                <hr>
-                <br>
-                <ul>
-                    <li>Volunteered as a sports volunteer at the College Fests</li>
-                    <li>Regularly donated blood to support medical emergencies and volunteered in tree-planting initiatives to promote environmental sustainability.</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="framecont">
-        <iframe width="340" height="185" src="https://www.youtube.com/embed/XJ7bYdjKDcA?si=9em6dLnH-tqzKSus" title="YouTube video player" frameborder="10" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
 
-        <iframe width="340" height="185" src="https://www.youtube.com/embed/y3R9e2L8I9E?si=WA89aT3BQGANXDEg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <!-- Achievements Section -->
+        <section class="section">
+            <h2 class="section-title">Achievements</h2>
+            <div class="achievements-container">
+                <ul>
+                    <li>Bronze medals in IMO and NSO</li>
+                    <li>State Level Hockey player</li>
+                    <li>Best player award in district level</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Video Section -->
+        <section class="section">
+            <h2 class="section-title">Featured Videos</h2>
+            <div class="video-grid">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/XJ7bYdjKDcA" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/y3R9e2L8I9E" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
     </div>
 </body>
-
 </html>
